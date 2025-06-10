@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(226, 144, 21);
+
+        }
+
+        form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin-left: 35%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #5cb85c;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #4cae4c;
+        }
+
+        .nav {
+            background-color: rgb(252, 191, 191);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+        }
+        .leftnav{
+            font-size: 16px;
+            align-items: center;
+        }
+
+        .rightnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        .rightnav a {
+            text-decoration: none;
+            color: rgb(124, 172, 12);
+            gap: 20px;
+        }
+
+        .rightnav a:hover {
+            font-size: 1.4rem;
+
+        }
+
+        .hero img {
+            height: 800px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="leftnav">
+           <h3>ROYAL'S LAXURY HOTEL</h3>
+        </div>
+        <centre>
+            WELCOME TO OUR HOTEL
+        </centre>
+        <div class="rightnav">
+            <a href="/client/booking.html">home</a>
+
+            <a href="/client/s.html">about</a>
+            <a href="/client/contact.html">contact</a>
+            <a href="/client/project.html">project</a>
+        </div>
+    </div>
+<marquee behavior="" direction="right">I am Ramchandra this is my hotel management project</marquee>
+
+    <div class="hero">
+        <img src="Ram.jpg" alt="">
+    </div>
+    <center>
+        <h1>FOR BOOKING</h1>
+    </center>
+
+
+    <form action="http://localhost/forest/server/controllers/booking.php" method="POST">
+        <h2>Hotel Booking Form</h2>
+        <label>Guest Name:</label>
+        <input type="text" name="guest_name" required>
+
+        <label>Room Type:</label>
+        <input type="text" name="room_type" required>
+
+        <label>Check-in Date:</label>
+        <input type="date" name="check_in" required>
+
+        <label>Check-out Date:</label>
+        <input type="date" name="check_out" required>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Phone:</label>
+        <input type="text" name="phone">
+
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+
+</html>

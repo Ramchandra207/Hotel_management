@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 144, 21);
+    text-align: center;
+}
+
+.nav {
+    background-color: rgb(252, 191, 191);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.rightnav a {
+    text-decoration: none;
+    color: rgb(124, 172, 12);
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.rightnav a:hover {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+}
+
+h1 {
+    color: white;
+}
